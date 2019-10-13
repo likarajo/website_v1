@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Rajarshi Chattopadhyay</title>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="author" content="Rajarshi Chattopadhyay" />
+
+	<base href="https://likarajo.github.io/website/">
+
+	<link rel="canonical" href="https://likarajo.github.io/website" />
+
+	<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="assets/stylesheets/main.css" />
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="assets/scripts/main.js"></script>
+	<script type="text/javascript" src="assets/scripts/myclock.js"></script>
+
+</head>
+
+<body>
+
+	<!-- Top menu on small screens -->
+	<header class="w3-container w3-deep-purple w3-top">
+		<div id="shortcuts" class="w3-left">
+			<i class="fa fa-bars show zoomable w3-ripple" onclick="sidebar_open()"></i>
+			<font size="-1">Shortcuts</font>
+		</div>
+		<div id="resume" class="w3-right">
+			<font size="-1">Resume </font>
+			<a title="My Resume" href="https://drive.google.com/file/d/1m8qp4zzN7BPpt7rHEzURnB22v4zYcNZd/view" target="_blank">
+        <i class="fa fa-file-pdf-o show zoomable w3-ripple"></i>
+      </a>
+		</div>
+	</header>
+
+	<!-- Sidebar -->
+	<div id="sidebar" class="w3-sidebar w3-bar-block w3-animate-right w3-cell-middle">
+		<a class="w3-bar-item w3-button w3-left w3-padding-16" onclick="sidebar_close()" href="javascript:void()">CLOSE<i class="fa fa-close w3-text-deep-purple w3-right"></i></a>
+		<a class="w3-bar-item w3-button w3-left w3-padding-16" onclick="sidebar_close()" href="#home"><i class="fa fa-home w3-text-deep-purple"></i> Home</a>
+		<a class="w3-bar-item w3-button w3-left w3-padding-16" onclick="sidebar_close()" href="#aboutme"><i class="fa fa-user w3-text-deep-purple"></i> About Me</a>
+		<a class="w3-bar-item w3-button w3-left w3-padding-16" onclick="sidebar_close()" href="#education"><i class="fa fa-book w3-text-deep-purple"></i> Education</a>
+		<a class="w3-bar-item w3-button w3-left w3-padding-16" onclick="sidebar_close()" href="#career"><i class="fa fa-suitcase w3-text-deep-purple"></i> Career</a>
+		<a class="w3-bar-item w3-button w3-left w3-padding-16" onclick="sidebar_close()" href="#projects"><i class="fa fa-github-square w3-text-deep-purple"></i> Projects</a>
+		<a class="w3-bar-item w3-button w3-left w3-padding-16" onclick="sidebar_close()" href="#papers"><i class="fa fa-pencil-square w3-text-deep-purple"></i> Papers</a>
+		<a class="w3-bar-item w3-button w3-left w3-padding-16" onclick="sidebar_close()" href="#activities"><i class="fa fa-microphone w3-text-deep-purple"></i> Activities</a>
+		<a class="w3-bar-item w3-button w3-left w3-padding-16" onclick="sidebar_close()" href="#certifications"><i class="fa fa-certificate w3-text-deep-purple"></i> Certifications</a>
+		<a class="w3-bar-item w3-button w3-left w3-padding-16" onclick="sidebar_close()" href="https://drive.google.com/open?id=0Bz0lZ7iGOOPwSlVDcmlVSDBvVU0" target="_blank"><i class="fa fa-file-text w3-text-deep-purple"></i> Course work</a>
+	</div>
+
+	<div id="contact" class="w3-panel w3-white w3-display-container w3-serif">
+		<button class="w3-button w3-display-topright w3-deep-purple" onclick="contact_close()"><i class="fa fa-close"></i></button>
+		<p><i class="fa fa-envelope w3-large w3-text-deep-purple"></i> <a href="mailto:likarajo@gmail.com">likarajo@gmail.com</a></p>
+		<form action="mailto:likarajo@gmail.com" target="_blank">
+			<input class="w3-input" type="text" placeholder="Sender's Name" required name="Name">
+			<input class="w3-input" type="text" placeholder="Sender's Email" required name="Email">
+			<input class="w3-input" type="text" placeholder="Subject" required name="Subject">
+			<input class="w3-input" type="text" placeholder="Comment" required name="Comment">
+			<button class="w3-button w3-deep-purple w3-section" type="submit"><i class="fa fa-paper-plane"></i> SEND</button>
+			<button class="w3-button w3-deep-purple w3-section" type="reset">Reset</button>
+		</form>
+	</div>
+
+	<!-- Page Container -->
+	<div id="page" class="w3-content">
+
+		<!-- The Grid -->
+		<div id="home" class="w3-row-padding">
+
+			<br>
+
+			<div id="links" class="w3-margin-top">
+				<div id="mylinks" class="w3-bar">
+					<!--a class="w3-bar-item zoomable w3-ripple w3-opacity w3-hover-opacity-off" title="My Twitter profile" href="https://twitter.com/likarajo" target="_blank"><i class="fa fa-twitter w3-xlarge w3-text-blue"></i></a-->
+					<a class="w3-bar-item zoomable w3-ripple w3-opacity w3-hover-opacity-off" title="My LinkedIn profile" href="https://www.linkedin.com/in/likarajo" target="_blank"><i class="fa fa-linkedin w3-xlarge w3-text-indigo"></i></a>
+					<a class="w3-bar-item zoomable w3-ripple w3-opacity w3-hover-opacity-off" title="My GitHub project repositories" href="https://github.com/likarajo" target="_blank"><i class="fa fa-github-square w3-xlarge w3-text-purple"></i></a>
+					<a class="w3-bar-item zoomable w3-ripple w3-opacity w3-hover-opacity-off" title="My digital badges" href="https://www.youracclaim.com/user/likarajo" target="_blank"><img src="assets/images/icons/acclaiml.png" height="24" width="24"></i></a>
+					<a class="w3-bar-item zoomable w3-ripple w3-opacity w3-hover-opacity-off" title="My e-Portfolio" href="https://my.orgsync.com/likarajo" target="_blank"><img src="assets/images/icons/orgsync.png" height="24" width="24"></i></a>
+					<!--a class="w3-bar-item zoomable w3-ripple w3-opacity w3-hover-opacity-off" title="My Google+ profile" href="https://plus.google.com/+RajarshiChattopadhyay" target="_blank"><i class="fa fa-google-plus-official w3-xlarge w3-text-deep-orange"></i></a-->
+					<a class="w3-bar-item zoomable w3-ripple w3-opacity w3-hover-opacity-off" title="My Blogs" href="https://likarajoblogs.wordpress.com" target="_blank"><i class="fa fa-wordpress w3-xlarge w3-text-light-blue"></i></a>
+					<a class="w3-bar-item zoomable w3-ripple w3-opacity w3-hover-opacity-off show" title="Contact me" onclick="contact_toggle()"><i class="fa fa-envelope w3-xlarge w3-text-blue-grey"></i></a>
+				</div>
+			</div>
+
+			<div id="links-m" class="w3-margin-top dropdown">
+        <span onclick="links_toggle()">Links <i class="fa fa-caret-down zoomable show"></i></span>
+        <div id="mylinks-m" class="dropdown-content w3-bar-block w3-white w3-animate-down w3-cell-middle">
+          <ul >
+            <li class="zoomable w3-ripple w3-opacity w3-hover-opacity-off"><a title="My Twitter profile" href="https://twitter.com/likarajo" target="_blank"><i class="fa fa-twitter w3-xlarge w3-text-blue"></i></a></li>
+            <li class="zoomable w3-ripple w3-opacity w3-hover-opacity-off"><a title="My LinkedIn profile" href="https://www.linkedin.com/in/likarajo" target="_blank"><i class="fa fa-linkedin w3-xlarge w3-text-indigo"></i></a></li>
+            <li class="zoomable w3-ripple w3-opacity w3-hover-opacity-off"><a title="My GitHub project repositories" href="https://github.com/likarajo" target="_blank"><i class="fa fa-github-square w3-xlarge w3-text-purple"></i></a></li>
+            <li class="zoomable w3-ripple w3-opacity w3-hover-opacity-off"><a title="My digital badges" href="https://www.youracclaim.com/user/likarajo" target="_blank"><img src="assets/images/icons/acclaiml.png" height="24" width="24"></i></a></li>
+            <li class="zoomable w3-ripple w3-opacity w3-hover-opacity-off"><a title="My e-Portfolio" href="https://my.orgsync.com/likarajo" target="_blank"><img src="assets/images/icons/orgsync.png" height="24" width="24"></i></a></li>
+            <!--li class="zoomable w3-ripple w3-opacity w3-hover-opacity-off"><a title="My Google+ profile" href="https://plus.google.com/+RajarshiChattopadhyay" target="_blank"><i class="fa fa-google-plus-official w3-xlarge w3-text-deep-orange"></i></a></li-->
+            <li class="zoomable w3-ripple w3-opacity w3-hover-opacity-off"><a title="My Blogs" href="https://likarajoblogs.wordpress.com" target="_blank"><i class="fa fa-wordpress w3-xlarge w3-text-light-blue"></i></a></li>
+            <li class="zoomable w3-ripple w3-opacity w3-hover-opacity-off"><a title="Contact me" onclick="contact_toggle()"><i class="fa fa-envelope w3-xlarge w3-text-blue-grey"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+			<div class="w3-row-padding">
+
+				<!-- Left Column -->
+				<div class="w3-third">
+
+					<div class="w3-container w3-margin-bottom">
+						<div id="prof">
+							<h3>Rajarshi Chattopadhyay</h3>
+							<img id="profilepic" class="w3-image w3-circle" src="https://www.gravatar.com/avatar/4dd44515199353e6d769b4a630a3862c?s=400" alt="Profile picture" />
+						</div>
+					</div>
+
+				</div>
+				<!-- End of Left Column -->
+
+				<!-- Right Column -->
+				<div class="w3-twothird">
+
+					<div class="w3-container w3-margin-bottom">
+						<h4><i class="fa fa-play-circle-o fa-fw w3-xxlarge w3-text-deep-purple"></i>Timeline</h4>
+						<iframe id="timeline" class="w3-opacity-min w3-hover-opacity-off" src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1bzuIJEjH-VSdClUDiqE379eR86CX9jZEpzoxPKbQCA8" alt="Timeline frame"></iframe>
+					</div>
+
+				</div>
+				<!-- End of Right Column -->
+
+			</div>
+
+			<div class="w3-row-padding">
+
+				<div id="aboutme" class="w3-container w3-card w3-hover-shadow w3-padding-32 w3-row-padding w3-margin-bottom">
+					<h4><i class="fa fa-user fa-fw w3-xxlarge w3-text-deep-purple"></i>About Me</h4>
+					<div class="w3-padding">
+						<b><font size="+1">Rajarshi Chattopadhyay</font></b> is a graduate student at the <a href="https://www.utdallas.edu" target="_blank">University of Texas at Dallas</a>, majoring in Computer Science.<br>
+						He is experienced in web development and database design, and has in-depth knowledge of shipping industry.<br><br>
+						He is a former System Engineer at <a href="https://www.ibm.com/in-en/" target="_blank">IBM</a> - <a href="http://www-07.ibm.com/in/careers/gbs/aboutus.html" target="_blank">Client Innovation Centre</a>, India,
+						where he served as Application Developer in the Distribution sector.<br>
+						He interned at Bharat Sanchar Nigam Ltd. and SIEMENS Metal technologies, where he worked on Computer Networking and Automation respectively.
+						He also worked part-time at Hi-Q Solutions on embedded systems.<br><br>
+						Rajarshi received his Bachelor of Technology degree in Electronics and Communication Engineering from <a href="http://www.wbut.ac.in/" target="_blank">West Bengal University of Technology (WBUT)</a>, Kolkata, India.<br><br>
+						His cross-disciplinary research interests lie in areas of Big Data management and analysis, and Applied Machine Learning.
+					</div>
+				</div>
+
+				<div id="education" class="w3-container w3-card w3-hover-shadow w3-padding-32 w3-row-padding w3-margin-bottom">
+					<h4><i class="fa fa-book fa-fw w3-xxlarge w3-text-deep-purple"></i>Education</h4>
+					<div class="w3-container">
+						<h5><b><a href="http://www.utdallas.edu/" target="_blank">The University of Texas at Dallas</a></b></h5>
+						<h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw"></i>Aug 2018 - <span class="w3-tag w3-deep-purple w3-round">Present</span></h6>
+						<p>Master of Science - Computer Science</p>
+						<hr>
+						<h5><b><a href="http://www.wbut.ac.in/" target="_blank">West Bengal University of Technology</a></b></h5>
+						<h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw"></i>2010 - 2014</h6>
+						<p>Bachelor of Technology - Electronics Engineering</p>
+					</div>
+				</div>
+
+				<div id="career" class="w3-container w3-card w3-hover-shadow w3-padding-32 w3-row-padding w3-margin-bottom">
+					<h4><i class="fa fa-suitcase fa-fw w3-xxlarge w3-text-deep-purple"></i>Career</h4>
+					<div class="w3-container">
+						<h5><b>Graduate Assistant / <a href="https://utdallas.edu/ogs/" target="_blank">Office of Graduate Education</a> <a href="https://utdallas.edu/" target="_blank">The University of Texas at Dallas</a></b></h5>
+						<h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw"></i>Oct 2018 - <span class="w3-tag w3-deep-purple w3-round">Present</span></h6>
+						<p>Responsibilities: Administrative support, Visual Basic for Applications (VBA) Macro programming, Data management, Social media engagement</p>
+					</div>
+					<hr>
+					<div class="w3-container">
+						<h5><b>System Engineer / <a href="https://www.ibm.com/in-en/" target="_blank">IBM</a> <a href="http://www-07.ibm.com/in/careers/gbs/aboutus.html" target="_blank">Client Innovation Centre</a></b></h5>
+						<h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw"></i>Dec 2014 - Jul 2018</h6>
+						<p>Responsibilities: Application Developement, Data mining, Data analysis, Database maintenance, Automation</p>
+					</div>
+					<hr>
+					<div id="show_prev_career" class="show w3-center " onclick="show_prev_career()"><u>Show More</u>...</div>
+					<div id="prev_career">
+						<div class="w3-container">
+							<h5><b>Embedded System Engineer / <a href="http://hiqsolutions.in/" target="_blank">Hi-Q Solutions</a></b></h5>
+							<h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw"></i>Aug 2012 - Dec 2013</h6>
+							<p>Responsibilities: Embedded product programming, designing and development</p>
+						</div>
+						<hr>
+						<div class="w3-container">
+							<h5><b>Associate Engineer / <a href="http://www.bsnl.co.in/" target="_blank">Bharat Sanchar Nigam Ltd. (BSNL)</a></b></h5>
+							<h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw"></i>Mar 2013 - May 2013</h6>
+							<p>Responsibilities: Network Designing</p>
+						</div>
+						<hr>
+						<div class="w3-container">
+							<h5><b>Associate Engineer / <a href="http://www.siemens.co.in/en/news_press/index/news_archive/aug_21_2008.htm" target="_blank">Siemens VAI Metal Technologies</a></b></h5>
+							<h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw"></i>Dec 2012 - Feb 2013</h6>
+							<p>Responsibilities: Program Logic Designing</p>
+						</div>
+						<hr>
+						<div class="w3-container">
+							<h5><b>Engineer Trainee / <a href="http://www.bsnl.co.in/" target="_blank">Bharat Sanchar Nigam Ltd. (BSNL)</a></b></h5>
+							<h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw"></i>Dec 2012 - Feb 2013</h6>
+							<p>Responsibilities: Communication System monitoring and analysis</p>
+						</div>
+						<hr>
+						<div id="hide_prev_career" class="show w3-center " onclick="hide_prev_career()"><u>Show Less</u>...</div>
+					</div>
+				</div>
+
+				<div id="projects" class="w3-container w3-card w3-hover-shadow w3-padding-32 w3-row-padding w3-margin-bottom">
+					<h4><i class="fa fa-github-square fa-fw w3-xxlarge w3-text-deep-purple"></i>Projects</h4>
+					<h6><a href="https://github.com/likarajo/repositories" target="_blank">Repositories</a></h6>
+					<!--div>
+						<div class="w3-container">
+							<h5><b><a href="https://likarajo.github.io/kinship" target="_blank">Kin’ship Tool</a></b></h5>
+							<h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw"></i>Jul 2017</h6>
+							<p>Desc: Twitter data mining and development of model to find out the most related words (kin) to a word/phrase used in tweets.</p>
+						</div>
+						<hr>
+						<div class="w3-container">
+							<h5><b><a href="https://likarajo.github.io/rock-paper-scissor" target="_blank">Rock-Paper-Scissor Game</a></b></h5>
+							<h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw"></i>Aug 2018</h6>
+							<p>Desc: Game developed with python</p>
+						</div>
+						<hr>
+						<div class="w3-container">
+							<h5><b><a href="https://likarajo.github.io/clock" target="_blank">Clock</a></b></h5>
+							<h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw"></i>Apr 2018</h6>
+							<p>Desc: Clock built with HTML/CSS/JavaScript.</p>
+						</div>
+						<hr>
+						<div id="show_prev_projects" class="show w3-center " onclick="show_prev_projects()"><u>Show More</u>...</div>
+						<div id="prev_projects">
+							<div class="w3-container">
+								<h5><b><a href="https://likarajo.github.io/brickbreaker" target="_blank">Brick Breaker Game</a></b></h5>
+								<h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw"></i>Mar 2018</h6>
+								<p>Desc: Game built with HTML/CSS/JavaScript.</p>
+							</div>
+							<hr>
+							<div class="w3-container">
+								<h5><b><a href="https://likarajo.github.io/mqreporting" target="_blank">Automation of Message Queue Reporting</a></b> / IBM, Kolkata, India</h5>
+								<h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw"></i>June 2017</h6>
+								<p>Desc: Development of automated MQ status reporting job and setting up the same in Cron.</p>
+							</div>
+							<hr>
+							<div class="w3-container">
+								<h5><b><a href="https://likarajo.github.io/mqmonitoring" target="_blank">Automation of Message Queue Monitoring</a></b> / IBM, Kolkata, India</h5>
+								<h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw"></i>May 2017</h6>
+								<p>Desc: Development of automated MQ status monitoring job and setting up the same in Cron.</p>
+							</div>
+							<hr>
+							<div class="w3-container">
+								<h5><b><a href="https://likarajo.github.io/mqstats" target="_blank">Application-Interface Message Statistics Tool</a></b> / IBM, Kolkata, India</h5>
+								<h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw"></i>Nov 2015</h6>
+								<p>Desc: Development of Bash shell Script, Windows GUI, and Web Application to mine application logs and extract data to calculate statistics of application – interface message exchange.</p>
+							</div>
+							<hr>
+							<div class="w3-container">
+								<h5><b><a href="https://likarajo.github.io/processor" target="_blank">RISC Processor based on Harvard Architecture</a></b> / Senior Thesis</h5>
+								<h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw"></i>Apr 2014</h6>
+								<p>Desc: Design and development of a 16-bit customized Reduced Instruction Set Processor based on Harvard Architecture, that incorporates both Operation Code and Data within 16 bits, and implementation of the same with minimum area in FPGA.</p>
+							</div>
+							<hr>
+							<div class="w3-container">
+								<h5><b><a href="https://likarajo.github.io/bootable-mcs" target="_blank">Bootable Microcontroller (8051) board with optional ROM</a></b> / Hi-Q Solutions, Kolkata, India</h5>
+								<h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw"></i>Jul 2013</h6>
+								<p>Desc: Design and development of a microcontroller panel which can be used to directly program a microcontroller without the need to write and burn the monitor program on a ROM separately; Owner of the intellectual property of the prototype.</p>
+							</div>
+							<hr>
+							<div class="w3-container">
+								<h5><b><a href="https://likarajo.github.io/college-network" target="_blank">College Network</a></b> / Bharat Sanchar Nigam Ltd, Kolkata, India</h5>
+								<h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw"></i>May 2013</h6>
+								<p>Desc: Design a college network for connecting institutes present in three isolated locations using a pre-defined pool of IP address (IPV4), and implement using NetSim (Network Simulator).</p>
+							</div>
+							<hr>
+							<div class="w3-container">
+								<h5><b>Automatic Pump Controller</b> / Hi-Q Solutions, Kolkata, India</h5>
+								<h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw"></i>Sep 2012</h6>
+								<p>Desc: Design and develop an embedded system comprising of a controller, which can be connected to sensors that detect fluid level in a container, and accordingly switch motor ON/OFF based on fluid level.</p>
+							</div>
+							<hr>
+							<div id="hide_prev_projects" class="show w3-center " onclick="hide_prev_projects()"><u>Show Less</u>...</div>
+						</div>
+					</div-->
+				</div>
+
+				<div id="papers" class="w3-container w3-card w3-hover-shadow w3-padding-32 w3-row-padding w3-margin-bottom">
+					<h4><i class="fa fa-pencil-square fa-fw w3-xxlarge w3-text-deep-purple"></i>Papers</h4>
+					<div class="w3-container">
+						<h6><b>Rajarshi Chattopadhyay</b>, Sagnik Raha and Rabindranath Sarkar, <i>Design, development and prototyping of Bootable MCS-51 Board having optional ROM</i>, <b>Product development</b> on behalf of Hi-Q Solutions. [<b>Owner of the intellectual property</b>]</h6>
+						<h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw"></i>2013</h6>
+					</div>
+					<hr>
+					<div class="w3-container">
+						<h6><b>Rajarshi Chattopadhyay</b>, Sagnik Raha and Rabindranath Sarkar, <i>Development of 16-bit RISC processor with Harvard architecture and implementation utilizing minimum area on FPGA</i>, <b>2013 Technical Paper Contest</b> by Institute of Electronic and Telecommunication Engineers (IETE) Student Forum. <b>[Submitted to IETE Journal of Research (20th October 2017)]</b></h6>
+						<h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw"></i>Apr 2014</h6>
+					</div>
+				</div>
+
+				<div id="activities" class="w3-container w3-card w3-hover-shadow w3-padding-32 w3-row-padding w3-margin-bottom">
+					<h4><i class="fa fa-microphone fa-fw w3-xxlarge w3-text-deep-purple"></i>Academic Activities</h4>
+					<div class="w3-container">
+						<h5><b>OJT Trainer</b>, Maersk Line IT Application Support / IBM, India</h5>
+						<li>Service Adapter Architecture of Global Customer Service System used for shipping lifecycle</li>
+						<li>Application business process, logic and data integration in shipping industry</li>
+						<li>RDBMS, SQL, Shell scripting, MVC</li>
+						<h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw"></i>Sep 2015 - <span class="w3-tag w3-deep-purple w3-round">Present</span></h6>
+					</div>
+					<hr>
+					<div class="w3-container">
+						<h5><b>Presentation</b> on <i>RISC Processors and Harvard Architecture</i> in <b>National Seminar on 'Advanced Microprocessor and VLSI Devices'</b> / Narula Institute of Technology, Kolkata, India</h5>
+						<h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw"></i>Apr 2014</h6>
+					</div>
+					<hr>
+					<div class="w3-container">
+						<h5><b>Presentation</b> on <i>Wireless and Cellular Communications</i> in <b>Industry based Educational Program</b> / Narula Institute of Technology, Kolkata, India</h5>
+						<h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw"></i>Jul 2012</h6>
+					</div>
+				</div>
+
+				<div id="certifications" class="w3-container w3-card w3-hover-shadow w3-padding-32 w3-row-padding w3-margin-bottom">
+					<h4><i class="fa fa-certificate fa-fw w3-xxlarge w3-text-deep-purple"></i>Certifications</h4>
+					<iframe class="badge w3-opacity w3-hover-opacity-off w3-container w3-card w3-white" src="https://www.youracclaim.com/embedded_badge/1f9cc7ba-6947-4b68-b19a-dd87ca7358f2" allowtransparency="false" scrolling="no"></iframe>
+					<iframe class="badge w3-opacity w3-hover-opacity-off w3-container w3-card w3-white" src="https://www.youracclaim.com/embedded_badge/da3fba74-7fc3-4eca-8f37-45fbbaade1b1" allowtransparency="false" scrolling="no"></iframe>
+					<iframe class="badge w3-opacity w3-hover-opacity-off w3-container w3-card w3-white" src="https://www.youracclaim.com/embedded_badge/f8683ce3-65ef-4370-a014-b90e4e764ba4" allowtransparency="false" scrolling="no"></iframe>
+					<iframe class="badge w3-opacity w3-hover-opacity-off w3-container w3-card w3-white" src="https://www.youracclaim.com/embedded_badge/d16d7bef-403b-4f33-bd2f-46cb6ab86de6" allowtransparency="false" scrolling="no"></iframe>
+					<iframe class="badge w3-opacity w3-hover-opacity-off w3-container w3-card w3-white" src="https://www.youracclaim.com/embedded_badge/539ed004-cc7d-4e7f-ac5f-b44f024d9bf4" allowtransparency="false" scrolling="no"></iframe>
+					<iframe class="badge w3-opacity w3-hover-opacity-off w3-container w3-card w3-white" src="https://www.youracclaim.com/embedded_badge/988cb1ad-c09e-4f88-8161-60bd14da9522" allowtransparency="false" scrolling="no"></iframe>
+					<div class="tbadge w3-opacity w3-hover-opacity-off w3-container w3-card w3-white">
+						<div class="tbadge-text">
+							<b>Oracle Database 11g SQL Fundamentals 1</b> <i class="fa fa-calendar w3-text-deep-purple"></i>
+							<font size="-1"> Sep 2016</font>
+						</div>
+					</div>
+				</div>
+
+				<div id="ending" class="w3-container w3-margin-bottom">
+					<div id="time">
+						<span id="date"></span><span>-</span><span id="month"></span><span>-</span><span id="year"></span><span> </span><span id="hours"></span><span>:</span><span id="minutes"></span><span>:</span><span id="seconds"></span> UTC
+					</div>
+					<font size="-2">Hosted in GitHub</font> <i class="fa fa-github w3-text-purple"></i>
+					<br><br>
+				</div>
+
+			</div>
+
+		</div>
+		<!-- End of Grid -->
+
+	</div>
+	<!-- End of Page Container -->
+
+	<footer class="w3-container w3-deep-purple w3-bottom">
+		<div id="modified" class="w3-left">
+			<font size="-2"><i>Last modified</i>:
+				<script>
+					last_modified();
+				</script>
+				UTC
+			</font>
+		</div>
+		<div id="created_by" class="w3-right">
+			<font size="-1">&copy;
+				<script>
+					author_name();
+				</script>
+			</font>
+		</div>
+	</footer>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-105786857-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-105786857-1');
+	</script>
+
+	<!--script type="text/javascript" src="https://cdn.youracclaim.com/assets/utilities/embed.js" async=true></script-->
+
+</body>
+
+</html>
